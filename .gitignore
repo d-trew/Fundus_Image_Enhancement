@@ -4,3 +4,7 @@ pretrained_weights/led.bin
 pretrained_weights/pcenet.pth
 pretrained_weights/scrnet.pth
 pretrained_weights/arcnet.pth
+
+
+# Virtual Environment
+venv/
