@@ -1,10 +1,11 @@
 __pycache__
-pretrained_weights/isecret.pt
-pretrained_weights/led.bin
-pretrained_weights/pcenet.pth
-pretrained_weights/scrnet.pth
-pretrained_weights/arcnet.pth
+LED/pretrained_weights/isecret.pt
+LED/pretrained_weights/led.bin
+LED/pretrained_weights/pcenet.pth
+LED/pretrained_weights/scrnet.pth
+LED/pretrained_weights/arcnet.pth
 
 
 # Virtual Environment
 venv/
+.venv/

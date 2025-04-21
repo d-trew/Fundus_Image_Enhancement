@@ -1,0 +1,7 @@
+c:\Projects\com3025cw\.venv\Scripts\python.exe -m pip install pip<24
+pip install numpy --only-binary=:all:
+
+maybe pip install --only-binary :all: numpy==1.21.3
+
+pip install "protobuf<4,>=3.20"
+pip install "huggingface_hub<0.15,>=0.13"

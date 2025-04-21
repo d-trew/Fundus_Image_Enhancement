@@ -2,9 +2,12 @@ from typing import  List, Optional, Union
 import numpy as np
 import torch
 import PIL
-from diffusers.utils import logging, randn_tensor
+# from diffusers.utils import logging, randn_tensor - from old diffusers
+from diffusers.utils import logging
+from diffusers.utils.torch_utils import randn_tensor
 from diffusers import DDPMScheduler
-from diffusers.pipeline_utils import DiffusionPipeline, ImagePipelineOutput
+# from diffusers.pipeline_utils import DiffusionPipeline, ImagePipelineOutput - from old diffusers
+from diffusers import DiffusionPipeline, ImagePipelineOutput
 from typing import List, Optional, Tuple, Union
 from PIL import Image
 from led.models.unet import UNet2DGenerator, _default_config
