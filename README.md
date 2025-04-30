@@ -7,9 +7,11 @@ LED is from [LED](https://github.com/QtacierP/LED), thank you.
 
 ## License
 This repository is released under the Apache 2.0 license as found in the [LICENSE](LICENSE) file.
+
 ```
 com3025cw
 ├─ commands.txt
+├─ CycleGAN for image degredation.ipynb
 ├─ LED
 │  ├─ .ipynb_checkpoints
 │  │  └─ example-checkpoint.ipynb
@@ -52,16 +54,25 @@ com3025cw
 │  │  │  ├─ unet.py
 │  │  │  └─ __init__.py
 │  │  ├─ pipelines
-│  │  │  └─ led_pipeline.py
+│  │  │  ├─ led_pipeline.py
+│  │  │  └─ __init__.py
 │  │  ├─ trainers
+│  │  │  ├─ fine-tuned_trainer.py
 │  │  │  ├─ led_trainer.py
 │  │  │  └─ utils.py
 │  │  └─ __init__.py
-│  └─ script
-│     └─ train.py
+│  ├─ outputs
+│  │  └─ dummy-checkpoint
+│  ├─ pretrained_weights
+│  ├─ script
+│  │  ├─ dummy_checkpoint.py
+│  │  ├─ finetune.py
+│  │  └─ train.py
+│  └─ __init__.py
 ├─ LICENSE
 ├─ main.py
 ├─ README.md
 └─ requirements.txt
 
+```
 ```

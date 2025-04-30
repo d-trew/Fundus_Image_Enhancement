@@ -1,0 +1,58 @@
+# seed: 42
+
+# model:
+#   sample_size: 512
+#   in_channels: 6
+#   out_channels: 3
+#   # pretrained_path: "./outputs/pretrained/model.pth"
+#   freeze_backbone: true
+#   unfreeze_layers: ["up_blocks.4", "up_blocks.5"]
+#   pretrained_path: "pretrained_weights/led.bin"
+#   model_type: "led"  # Options: led, scrnet, pcenet, isecret, arcnet
+
+
+
+# train:
+#   lr: 1e-5
+#   num_epochs: 50
+#   weight_decay: 1e-6
+#   train_batch_size: 4
+#   num_worker: 4
+#   save_model_epochs: 10
+
+
+# data:
+#   train_good_image_dir: "finetune_images/good_images"
+#   train_bad_image_dir: "finetune_images/degraded_images"
+#   image_size: 512
+
+# output_dir: "./logs/finetune"
+
+# Fine-tuning specific configuration
+model:
+  # Fine-tuning parameters only (architecture comes from train_led.yaml)
+  freeze_backbone: true
+  unfreeze_layers: ["up_blocks.4", "up_blocks.5"]
+  pretrained_path: "pretrained_weights/led.bin"  # Relative to LED directory
+  model_type: "led"
+
+# Data configuration (can override train_led.yaml)
+data:
+  train_good_image_dir: "finetune_images/good_images"
+  train_bad_image_dir: "finetune_images/degraded_images"
+  image_size: 512
+
+# Training parameters (override original training params)
+train:
+  lr: 1e-5
+  num_epochs: 1 #50
+  save_model_epochs: 1 #10
+  train_batch_size: 4      # Add this
+  eval_batch_size: 4       # Add this
+  num_worker: 4            # Add this
+  weight_decay: 1e-6       # Ensure this exists
+  adam_beta1: 0.9          # Ensure this exists
+  adam_beta2: 0.999        # Ensure this exists
+  adam_eps: 1e-8           # Ensure this exists
+
+output_dir: "./logs/finetune"  # Different output directory

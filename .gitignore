@@ -5,7 +5,9 @@ LED/pretrained_weights/pcenet.pth
 LED/pretrained_weights/scrnet.pth
 LED/pretrained_weights/arcnet.pth
 
+datasets/
 
 # Virtual Environment
 venv/
 .venv/
+finetune_venv/

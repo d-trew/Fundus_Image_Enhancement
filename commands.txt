@@ -5,3 +5,9 @@ maybe pip install --only-binary :all: numpy==1.21.3
 
 pip install "protobuf<4,>=3.20"
 pip install "huggingface_hub<0.15,>=0.13"
+
+
+& "C:\Users\Daniel's laptop\AppData\Local\Programs\Python\Python39\python.exe" -m venv venv --without-pip
+.\venv\Scripts\activate
+(Invoke-WebRequest https://bootstrap.pypa.io/get-pip.py -UseBasicParsing).Content | python -
+python get-pip.py

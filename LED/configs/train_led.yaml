@@ -2,11 +2,11 @@ seed: 42
 
 # data
 data:
-  train_good_image_dir: # high quality images
-  train_bad_image_dir: # low quality images
-  train_degraded_image_dir: # degraded images
-  val_good_image_dir: # high quality images
-  val_bad_image_dir: # low quality images
+  train_good_image_dir: "finetune_images/good_images"
+  train_bad_image_dir: "finetune_images/degraded_images" # just degraded - didnt have bad quality images
+  # train_degraded_image_dir: finetune_images/degraded_images
+  val_good_image_dir: "finetune_images/degraded_images"
+  val_bad_image_dir: "finetune_images/degraded_images" 
   image_size: 512
 
 # model
@@ -68,6 +68,7 @@ train:
   save_images_epochs: 5
   adv_start_epoch: 5
   save_model_epochs: 50
+  
 
 diffusion:
   num_train_steps: 1000
