@@ -1,0 +1,11 @@
+RETINAL IMAGE QUALITY DEGRADATION ANALYSIS METRICS
+===============================================
+
+PSNR: 20.93 dB
+SSIM: 0.6305
+MSE: 0.0081
+FCNR: 0.6398
+LPIPS: 0.3851
+Good Vessel Density: 0.0646
+Degraded Vessel Density: 0.0630
+Vessel Density Reduction: 2.48%

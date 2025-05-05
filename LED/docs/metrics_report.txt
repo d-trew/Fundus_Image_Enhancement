@@ -1,11 +1,11 @@
 RETINAL IMAGE ENHANCEMENT ANALYSIS METRICS
 =======================================
 
-PSNR: 18.04 dB
-SSIM: 0.8219
+PSNR: 18.03 dB
+SSIM: 0.8224
 MSE: 0.0157
-FCNR: 0.6530
-LPIPS: 0.3616
-Enhanced Vessel Density: 0.0282
+FCNR: 0.6532
+LPIPS: 0.3643
+Enhanced Vessel Density: 0.0284
 Original Vessel Density: 0.0143
-Vessel Density Increase: 97.42%
+Vessel Density Increase: 99.09%
