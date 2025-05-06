@@ -1,6 +1,8 @@
 # Learning Enhancement From Degradation: A Diffusion Model For Fundus Image Enhancement
 Due to hardware limitations we were unable to completely run the finetuning, however it does run.
 
+evaluation can be seen and generated in LED/evaluation.ipynb
+
 To run:
 Create and activate a virtual environment using python 3.9.x
 downgrade pip to 23.3.2
